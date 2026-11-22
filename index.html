@@ -3,408 +3,869 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happy Birthday Abhishek ❤️</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Abhishek ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
 <style>
-*{box-sizing:border-box}
-:root{--pink:#f45e9b;--purple:#9475ce;--ink:#673b68}
-body{
- margin:0;min-height:100vh;font-family:'DM Sans',sans-serif;color:var(--ink);
- background:
- radial-gradient(ellipse at 10% 15%,#ffb5d4 0,transparent 35%),
- radial-gradient(ellipse at 90% 10%,#c8a8ff 0,transparent 38%),
- radial-gradient(ellipse at 50% 100%,#ffc8b6 0,transparent 42%),
- linear-gradient(135deg,#8d65a8,#e89bc6 45%,#a28bd5);
- background-attachment:fixed;overflow-x:hidden
+:root {
+  --pink: #ffb4cf;
+  --rose: #ff6e9f;
+  --purple: #a58bea;
+  --cream: #fff5f7;
+  --dark: #38253f;
 }
-body:before{
- content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
- background-image:radial-gradient(#fff 1px,transparent 1.5px);
- background-size:38px 38px;opacity:.24
-}
-#decor{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
-.float{
- position:absolute;bottom:-50px;animation:floatUp linear infinite;
- filter:drop-shadow(0 0 8px #fff)
-}
-@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
-.light{
- position:fixed;top:0;left:0;width:100%;height:90px;z-index:2;
- pointer-events:none;opacity:.85;
- background:radial-gradient(ellipse at top,#fff5 0,transparent 65%)
-}
-main{position:relative;z-index:3}
-.screen{
- display:none;min-height:100vh;padding:35px 15px;
- align-items:center;justify-content:center;text-align:center;
- animation:appear .7s ease
-}
-.screen.active{display:flex}
-@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
-.scene{
- position:relative;width:min(760px,100%);padding:clamp(25px,5vw,48px);
- border:1.5px solid #fff9;border-radius:28px;
- background:linear-gradient(145deg,#fff0f4e8,#f9e5ffcf);
- backdrop-filter:blur(18px);
- box-shadow:0 25px 70px #43214c55,0 0 35px #fff6,inset 0 0 25px #fff8;
- overflow:hidden
-}
-.scene:before{
- content:"";position:absolute;inset:8px;border:1px solid #fff9;
- border-radius:22px;pointer-events:none
-}
-.scene>*{position:relative}
-.tag{
- display:inline-block;border-radius:40px;padding:8px 17px;
- background:#fff8;border:1px solid #fff;color:#9b427d;
- font-size:11px;font-weight:700;letter-spacing:1px
-}
-h1,h2{font-family:'Playfair Display',serif;color:#8c3478}
-h1{font-size:clamp(39px,8vw,70px);line-height:1.1;margin:17px 0}
-h2{font-size:clamp(30px,6vw,44px);margin:14px 0}
-.script{font-family:'Great Vibes',cursive;color:#c63f87;font-size:clamp(36px,7vw,56px);margin:10px}
-p{font-size:15px;line-height:1.85;color:#704c75}
-.sub{max-width:530px;margin:12px auto 23px}
-.big-emoji{font-size:70px;display:block;filter:drop-shadow(0 8px 12px #a74d8d66);animation:bob 3s infinite}
-@keyframes bob{50%{transform:translateY(-9px) rotate(4deg)}}
-.btn{
- display:inline-block;border:1px solid #fff9;border-radius:50px;
- padding:14px 25px;margin:8px 4px;color:white;
- font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;
- background:linear-gradient(110deg,#f45e9b,#a57be0);
- box-shadow:0 8px 24px #a3438b66, inset 0 1px 5px #fff8;
- transition:.25s
-}
-.btn:hover{transform:translateY(-3px);box-shadow:0 13px 30px #a3438b88}
-.btn.lightbtn{background:#fff9;color:#994c89;border:1px solid #e9b9dc}
-.tiny{font-size:12px;color:#a66a99;margin-top:20px}
-.decor-row{font-size:27px;letter-spacing:9px;margin:15px 0;filter:drop-shadow(0 3px 5px #d46da466)}
-.side-decor{font-size:38px;position:absolute;filter:drop-shadow(0 5px 8px #9c528b66)}
-.left-decor{left:3px;bottom:8px}
-.right-decor{right:3px;bottom:8px}
-.progress{height:4px;position:fixed;top:0;left:0;width:0;background:#ffb4d7;z-index:20;box-shadow:0 0 12px white;transition:.4s}
 
-/* welcome */
-.welcome-title{
- font-family:'Great Vibes',cursive;font-size:clamp(48px,10vw,83px);
- color:#c21c77;text-shadow:0 3px 0 #fff,0 8px 22px #d45b9b66;
- line-height:1.05;margin:16px 0
-}
-.welcome-title span{display:block;font-size:.82em}
-.welcome-art{display:flex;justify-content:center;align-items:center;gap:12px;font-size:clamp(38px,8vw,65px);margin:15px 0}
-.welcome-art span:nth-child(odd){animation:bob 3s infinite}
-.welcome-art span:nth-child(even){animation:bob 2.4s infinite reverse}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* birthday cake */
-.cake{font-size:110px;filter:drop-shadow(0 10px 18px #a34b8766);animation:bob 2.5s infinite}
-.glow{width:150px;height:40px;margin:-10px auto 15px;background:#ffb4d8;filter:blur(25px);border-radius:50%}
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 15% 20%, #f8b8d9 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 15%, #b8a6f5 0%, transparent 38%),
+    radial-gradient(ellipse at 50% 90%, #f6c3d9 0%, transparent 45%),
+    linear-gradient(135deg, #30264e, #5d477e 45%, #34294e);
+  background-attachment: fixed;
+}
 
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0}
-.polaroid{
- padding:9px 9px 23px;background:#fff;border-radius:5px;
- box-shadow:0 9px 24px #5d35634c;transform:rotate(var(--r));
- transition:.25s
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .24;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white 99%, transparent),
+    radial-gradient(2px 2px at 70% 60%, white 99%, transparent),
+    radial-gradient(3px 3px at 40% 80%, white 99%, transparent),
+    radial-gradient(2px 2px at 90% 20%, white 99%, transparent);
+  background-size: 180px 180px;
+  z-index: 0;
 }
-.polaroid:hover{transform:rotate(0) scale(1.04);z-index:5}
-.polaroid img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#f5c8e3}
-.polaroid span{display:block;font-family:'Great Vibes',cursive;font-size:22px;color:#b64b8c;margin-top:8px}
-@media(min-width:580px){.gallery{grid-template-columns:repeat(3,1fr);gap:20px}}
 
-/* memory tiles */
-.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:25px 0}
-.tile{
- padding:20px 12px;border-radius:19px;background:#fff9;
- border:1px solid #fff;box-shadow:0 7px 18px #8b4e9022
+#stars, #floaties {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
 }
-.tile .ico{font-size:30px}
-.tile strong{display:block;color:#a13f83;margin:8px 0}
-.tile p{font-size:13px;margin:0;line-height:1.6}
-@media(max-width:380px){.tiles{grid-template-columns:1fr}}
 
-/* envelope */
-.envelope-wrap{padding:22px 0}
-.envelope{
- width:min(300px,82vw);height:190px;margin:35px auto 20px;
- position:relative;background:linear-gradient(145deg,#f69cc5,#c779bc);
- box-shadow:0 18px 35px #6e326c66;border-radius:8px;cursor:pointer
+.star {
+  position: absolute;
+  color: #fff4c8;
+  animation: twinkle 2.5s infinite alternate;
+  text-shadow: 0 0 12px white;
 }
-.envelope:before{
- content:"";position:absolute;inset:0;z-index:4;
- background:linear-gradient(140deg,#ffd0e3,#e99ac6);
- clip-path:polygon(0 0,100% 0,50% 60%);
- transform-origin:top;transition:transform .8s
-}
-.envelope:after{
- content:"";position:absolute;inset:0;z-index:3;
- background:linear-gradient(145deg,#e78cb9,#b96ab0);
- clip-path:polygon(0 100%,50% 48%,100% 100%)
-}
-.paper{
- position:absolute;top:12px;left:8%;width:84%;height:160px;
- padding:20px 10px;background:#fffaf5;border-radius:5px;
- color:#b94f8b;font-family:'Great Vibes',cursive;font-size:27px;
- transition:transform 1s;z-index:2
-}
-.envelope.open:before{transform:rotateX(180deg)}
-.envelope.open .paper{transform:translateY(-120px)}
-.seal{
- position:absolute;z-index:5;top:78px;left:calc(50% - 22px);
- width:44px;height:44px;border-radius:50%;background:#fff0f7;
- color:#c34483;display:grid;place-items:center;font-size:22px
-}
-.letter{
- display:none;text-align:left;background:#fffaf4eF;
- border:1px solid white;border-radius:18px;padding:23px;
- margin:20px auto;max-width:590px;box-shadow:0 12px 28px #6b3b6922
-}
-.letter.show{display:block;animation:appear .7s}
-.letter p{font-size:14px;line-height:1.9}
-.sign{text-align:right!important;font-family:'Great Vibes',cursive;font-size:30px!important;color:#c34483}
 
-/* final surprise */
-#final{
- display:none;position:fixed;inset:0;z-index:50;
- background:
- radial-gradient(circle at 20% 20%,#ffb8d8,transparent 38%),
- radial-gradient(circle at 80% 70%,#b6a1ff,transparent 40%),
- linear-gradient(135deg,#532a70,#a64d91 55%,#684a9d);
- color:white;align-items:center;justify-content:center;text-align:center;
- padding:25px;overflow:auto
+@keyframes twinkle {
+  from { opacity: .2; transform: scale(.7); }
+  to { opacity: 1; transform: scale(1.3); }
 }
-#final.show{display:flex;animation:appear .8s}
-#final h1{color:#fff;font-family:'Great Vibes',cursive;font-size:clamp(60px,12vw,100px);text-shadow:0 0 25px #ffacd9}
-#final p{color:white;max-width:500px}
-#final .close{position:absolute;right:18px;top:18px;border:1px solid #fff9;background:#fff3;color:white;border-radius:50%;width:42px;height:42px;font-size:22px}
-#final .heart{font-size:85px;animation:heartbeat 1.2s infinite}
-@keyframes heartbeat{50%{transform:scale(1.18)}}
-.confetti{position:fixed;top:-20px;width:9px;height:13px;z-index:60;animation:fall 3s linear forwards;pointer-events:none}
-@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+
+.floaty {
+  position: absolute;
+  bottom: -50px;
+  animation: rise linear forwards;
+  opacity: .6;
+}
+
+@keyframes rise {
+  to { transform: translateY(-110vh) rotate(35deg); opacity: 0; }
+}
+
+.screen {
+  display: none;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 45px 18px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: appear .8s ease;
+}
+
+.screen.active { display: flex; }
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.glass {
+  width: min(650px, 100%);
+  padding: 35px 25px;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 30px;
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(17px);
+  box-shadow: 0 15px 55px rgba(22, 9, 44, .25),
+              inset 0 1px 1px rgba(255,255,255,.3);
+}
+
+.eyebrow {
+  color: #ffe5f0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(36px, 8vw, 65px);
+  line-height: 1.13;
+  text-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+
+h2 {
+  color: white;
+  font-size: clamp(29px, 6vw, 43px);
+  margin-bottom: 18px;
+}
+
+h3 { color: #fff; }
+
+p {
+  color: #fff1f7;
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+.script {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.highlight { color: #ffd2e5; }
+
+.btn {
+  border: 0;
+  border-radius: 40px;
+  padding: 14px 26px;
+  margin: 10px 5px 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #57344e;
+  background: linear-gradient(135deg, #fff1f6, #ffc5dc);
+  box-shadow: 0 7px 22px rgba(30, 10, 40, .2);
+  transition: .25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(30, 10, 40, .3);
+}
+
+.btn.secondary {
+  color: white;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.4);
+}
+
+.emoji {
+  font-size: 65px;
+  margin: 10px 0 20px;
+  filter: drop-shadow(0 5px 15px rgba(255,255,255,.3));
+}
+
+.small-note {
+  font-size: 12px;
+  opacity: .8;
+  margin-top: 15px;
+}
+
+/* Welcome */
+.welcome-art {
+  font-size: 75px;
+  margin: 18px 0;
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+.tiny {
+  font-size: 13px;
+  margin-top: 14px;
+  color: #ffe2ef;
+}
+
+/* Game */
+.game-area {
+  position: relative;
+  width: min(500px, 100%);
+  height: 310px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 24px;
+  background: rgba(255,255,255,.12);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.game-heart {
+  position: absolute;
+  font-size: 36px;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.2));
+  animation: pop .35s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(.2); }
+  to { transform: scale(1); }
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/* Cake */
+.cake {
+  font-size: 105px;
+  margin: 15px 0;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,.2));
+}
+
+.candle {
+  display: inline-block;
+  animation: flicker .7s infinite alternate;
+}
+
+@keyframes flicker {
+  to { opacity: .6; transform: scale(.9); }
+}
+
+/* Gallery */
+.gallery {
+  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  margin: 22px auto;
+}
+
+.photo {
+  padding: 7px;
+  background: rgba(255,255,255,.9);
+  border-radius: 13px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  transform: rotate(var(--tilt));
+  transition: .3s;
+}
+
+.photo:hover {
+  transform: rotate(0) scale(1.04);
+  z-index: 2;
+}
+
+.photo img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-caption {
+  color: #76536b;
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  padding: 8px 2px 3px;
+}
+
+@media(max-width: 600px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .photo img { height: 155px; }
+  .glass { padding: 28px 18px; }
+}
+
+/* Memories */
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+  margin: 25px auto;
+  width: min(600px, 100%);
+}
+
+.memory {
+  padding: 20px 13px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.25);
+  color: white;
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+}
+
+.memory span { font-size: 27px; }
+.memory p { font-size: 13px; line-height: 1.6; }
+
+/* Letter */
+.letter {
+  background: #fff8f2;
+  color: #65445a;
+  padding: 35px 27px;
+  border-radius: 5px 22px 5px 22px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.2);
+  width: min(590px, 100%);
+  text-align: left;
+  position: relative;
+}
+
+.letter::before {
+  content: "♡";
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-size: 30px;
+  color: #e99ab7;
+}
+
+.letter h3 {
+  color: #9c5576;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.letter p {
+  color: #65445a;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+/* Final */
+.final-heart {
+  font-size: 90px;
+  animation: heartbeat 1.2s infinite;
+  filter: drop-shadow(0 0 25px #ffb4d5);
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.17); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.12); }
+}
+
+.final-message {
+  max-width: 570px;
+  margin: 20px auto;
+}
+
+.final-message p { margin-bottom: 13px; }
+
+.signature {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #ffd3e6;
+  margin-top: 22px;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #ffd0e4;
+  z-index: 10;
+  transition: width .4s;
+}
+
+@media(max-width: 420px) {
+  .memory-grid { grid-template-columns: 1fr 1fr; }
+  .memory { padding: 15px 9px; }
+  .memory p { font-size: 12px; }
+}
 </style>
 </head>
 
 <body>
-<div id="decor"></div>
-<div class="light"></div>
+
+<div id="stars"></div>
+<div id="floaties"></div>
 <div class="progress" id="progress"></div>
 
-<main>
-
+<!-- SCREEN 1: WELCOME -->
 <section class="screen active" id="s1">
- <div class="scene">
-  <span class="tag">A little something for someone special ♡</span>
-  <div class="welcome-art"><span>🎈</span><span>🧸</span><span>🎀</span></div>
-  <p class="script">It's your day...</p>
-  <div class="welcome-title">Happy Birthday <span>Abhishek! ❤️</span></div>
-  <div class="decor-row">✨ ♡ ✨ ♡ ✨</div>
-  <p class="sub">Aaj aapka birthday hai, toh obviously kuch toh special hona chahiye na! Aur haan, ye normal sa birthday wish nahi hai. Thoda patience rakhna. 😌</p>
-  <button class="btn" onclick="go('s2')">Chalo, dekho kya hai ✨ →</button>
-  <p class="tiny">Made with lots of love, thodi si pagalpan ke saath 💗</p>
-  <span class="side-decor left-decor">🌹</span>
-  <span class="side-decor right-decor">🧸</span>
- </div>
+  <div class="glass">
+    <div class="eyebrow">A little something for you</div>
+    <div class="welcome-art">🎈 🧸 🎂</div>
+    <h1>Hey Abhishek!</h1>
+    <p style="margin:18px 0">
+      Aaj aapke liye kuch banaya hai...
+      <br>aur haan, isme thoda sa drama bhi hai. 😂
+    </p>
+    <p class="script highlight" style="font-size:21px">
+      Toh please, bina nakhre kiye open karo!
+    </p>
+    <button class="btn" onclick="go(2)">Achha baba, open karo ❤️</button>
+    <div class="tiny">Made with a little love & lots of thoughts ✨</div>
+  </div>
 </section>
 
+<!-- SCREEN 2: GAME -->
 <section class="screen" id="s2">
- <div class="scene">
-  <span class="tag">Ek zaroori si baat ✨</span>
-  <div class="welcome-art">💗 🎈 💗</div>
-  <p class="script">Oye Abhishek!</p>
-  <h2>Aaj aapka din hai! 🥳</h2>
-  <p class="sub">Toh aaj saari harkatein maaf... kal se phir dekh lenge! 😂</p>
-  <div class="tiles">
-   <div class="tile"><div class="ico">👑</div><strong>Cute sweet kuchhu bachha</strong><p>Haan haan, aap hi ho. Zyada khush mat hona.</p></div>
-   <div class="tile"><div class="ico">✈️</div><strong>Ghoomne ka plan?</strong><p>YES! Ab koi trip plan karo.</p></div>
-   <div class="tile"><div class="ico">💬</div><strong>Random baatein</strong><p>Hamari speciality. No topic needed.</p></div>
-   <div class="tile"><div class="ico">❤️</div><strong>Mere favourite insaan</strong><p>Ismein koi competition nahi hai.</p></div>
+  <div class="glass">
+    <div class="eyebrow">Before the birthday celebration...</div>
+    <h2>Ek chhota sa test! 😂</h2>
+    <p>
+      Dekhte hain aap kitne fast ho.
+      <br>10 seconds mein 5 hearts pakadne hain!
+      <br>Ready? Aur haan, cheating allowed nahi hai.
+    </p>
+
+    <div class="game-stats">
+      <span>❤️ Hearts: <b id="score">0</b>/5</span>
+      <span>⏳ Time: <b id="timer">10</b>s</span>
+    </div>
+
+    <div class="game-area" id="gameArea">
+      <div id="gameIntro" style="padding:90px 15px;color:white">
+        <span style="font-size:38px">💗</span>
+        <p>Yahin aayenge hearts...</p>
+      </div>
+      <div id="gameResult" style="display:none;padding:95px 15px;color:white">
+        <h3 id="resultTitle">Wahhh! 😂</h3>
+        <p id="resultText">Kya speed hai!</p>
+      </div>
+    </div>
+
+    <button class="btn" id="startGame" onclick="startGame()">Chalo shuru karo!</button>
+    <button class="btn secondary" id="gameNext" style="display:none" onclick="go(3)">Ab birthday celebrate karo 🎂</button>
+    <p class="small-note">Pyaar pakadne mein toh aap already expert ho. 😌</p>
   </div>
-  <p>Ready for the madness? 😁</p>
-  <button class="btn" onclick="go('s3')">Let's Go! 🎉 →</button>
- </div>
 </section>
 
+<!-- SCREEN 3: BIRTHDAY -->
 <section class="screen" id="s3">
- <div class="scene">
-  <span class="tag">Today's main character</span>
-  <div class="cake">🎂</div><div class="glow"></div>
-  <p class="script">Happy Birthday!</p>
-  <h2>Abhishek ❤️</h2>
-  <p class="sub">Aaj aapka ek aur saal, aur meri taraf se aapke liye dher saara pyaar. Hamesha khush raho, healthy raho aur jo bhi chaho woh sab mile. 🥹</p>
-  <button class="btn" onclick="wish()">Blow the candles! 🕯️</button>
-  <p id="wishText" class="tiny"></p>
-  <button class="btn lightbtn" onclick="go('s4')">Cake ke baad photos dekho →</button>
- </div>
+  <div class="glass">
+    <div class="eyebrow">And now, the important part</div>
+    <h1>Happy Birthday!</h1>
+    <div class="cake" id="cake">🎂</div>
+    <p style="font-size:18px">
+      Happy Birthday Abhishek! ❤️
+    </p>
+    <p style="margin:12px 0">
+      Bhagwan kare aapki life mein itni khushiyan aayein
+      jitni aapko ghoomne jaane ki excitement hoti hai. 😂
+    </p>
+    <p class="script highlight" style="font-size:21px">
+      Ab candle blow karo aur wish maango!
+    </p>
+    <button class="btn" id="blowBtn" onclick="blowCandles()">Candles bujhao 🕯️</button>
+    <button class="btn secondary" id="cakeNext" style="display:none" onclick="go(4)">Wish maang li? Aage chalo ❤️</button>
+  </div>
 </section>
 
+<!-- SCREEN 4: PHOTOS -->
 <section class="screen" id="s4">
- <div class="scene">
-  <span class="tag">Camera roll ki gawahi</span>
-  <p class="script">Ye hum hain ♡</p>
-  <h2>Our little memories 📸</h2>
-  <p class="sub">Koi perfect photo nahi, bas hum... aur hamari duniya. 😁</p>
-  <div class="gallery" id="gallery"></div>
-  <button class="btn" onclick="go('s5')">Ab meri baat suno →</button>
- </div>
+  <div class="glass" style="width:min(950px,100%)">
+    <div class="eyebrow">Some moments, some memories</div>
+    <h2>Humari gallery ❤️</h2>
+    <p>
+      Kuch photos bas photos nahi hoti...
+      <br>unke saath alag hi feelings judi hoti hain.
+    </p>
+
+    <div class="gallery" id="gallery"></div>
+
+    <button class="btn" onclick="go(5)">Aur thodi baatein suno 💗</button>
+  </div>
 </section>
 
+<!-- SCREEN 5: MEMORIES -->
 <section class="screen" id="s5">
- <div class="scene">
-  <span class="tag">Things I love about you</span>
-  <p class="script">Aapki kuch baatein... ♡</p>
-  <h2>Thoda sa appreciation banta hai!</h2>
-  <div class="tiles">
-   <div class="tile"><div class="ico">❤️</div><strong>Aapka hona</strong><p>Bas aapka saath hi mere liye bahut hai.</p></div>
-   <div class="tile"><div class="ico">✈️</div><strong>Ghoomne ka plan</strong><p>Aapki travel wali excitement alag hi hai.</p></div>
-   <div class="tile"><div class="ico">🤭</div><strong>Kuchhu bachha</strong><p>Aapka cute mode mera favourite hai.</p></div>
-   <div class="tile"><div class="ico">💬</div><strong>Random baatein</strong><p>Aapke saath kuch bhi baat kar sakti hoon.</p></div>
-   <div class="tile"><div class="ico">💪</div><strong>Aapki strength</strong><p>Responsibilities ke saath chalna, never give up.</p></div>
-   <div class="tile"><div class="ico">🫶</div><strong>Aapka dil</strong><p>Sabke liye achha karna, ye mujhe bahut pasand hai.</p></div>
+  <div class="glass">
+    <div class="eyebrow">A few things about us</div>
+    <h2>Waise ek baat hai...</h2>
+    <p>Humari story mein kuch cheezein meri favourite hain. 🥹</p>
+
+    <div class="memory-grid">
+      <div class="memory">
+        <span>😂</span>
+        <h3>Random baatein</h3>
+        <p>Jab baat karne ke liye koi topic bhi nahi hota, tab bhi baatein khatam nahi hoti.</p>
+      </div>
+      <div class="memory">
+        <span>🚗</span>
+        <h3>Ghoomne ka plan</h3>
+        <p>Aapki outing wali excitement dekhkar hi aadha plan ban jaata hai.</p>
+      </div>
+      <div class="memory">
+        <span>🧸</span>
+        <h3>Aapka cute side</h3>
+        <p>Kabhi kabhi aap itne cute sweet se bachhe lagte ho ki bas kya hi bolun. 😭</p>
+      </div>
+      <div class="memory">
+        <span>🤍</span>
+        <h3>Safe feeling</h3>
+        <p>Aapke hone se ek alag sa sukoon rehta hai. Ye baat mere liye bahut badi hai.</p>
+      </div>
+    </div>
+
+    <p class="script highlight" style="font-size:20px">
+      Aur aisi bahut si baatein hain...
+    </p>
+    <button class="btn" onclick="go(6)">Ab ek baat dil se ❤️</button>
   </div>
-  <button class="btn" onclick="go('s6')">Ek secret aur hai →</button>
- </div>
 </section>
 
+<!-- SCREEN 6: CONFESSION -->
 <section class="screen" id="s6">
- <div class="scene">
-  <span class="tag">A little confession 🤭</span>
-  <div class="big-emoji">😚</div>
-  <p class="script">Sach bataun?</p>
-  <h2>Aap thode se cute ho!</h2>
-  <p class="sub">Kabhi ekdum cute sweet kuchhu bachha ban jaate ho. Aur kabhi itna irritate karte ho ki mann karta hai bas... rehne do! 😂</p>
-  <p class="sub">Lekin aapke saath random baatein karna, hasna, ghoomna aur bina kisi reason ke time spend karna — ye sab meri favourite cheezein hain.</p>
-  <div class="decor-row">♡ ✨ ♡ ✨ ♡</div>
-  <button class="btn" onclick="go('s7')">Ab ek letter hai aapke liye 💌</button>
- </div>
+  <div class="glass">
+    <div class="emoji">🥹💗</div>
+    <div class="eyebrow">Something I want you to know</div>
+    <h2>Ek baat bataun?</h2>
+    <p style="font-size:17px;line-height:2">
+      Main shayad har baar express nahi kar paati,
+      par aap mere liye kitne important ho,
+      ye main har din feel karti hoon.
+    </p>
+    <p style="margin-top:15px">
+      Aapki khushi, aapki tension, aapke plans,
+      aapki chhoti-chhoti baatein...
+      pata nahi kab sab mere liye itna important ho gaya.
+    </p>
+    <p class="script highlight" style="font-size:22px;margin-top:20px">
+      Aur haan, main roz sone se pehle Bhagwan se aapke liye pray karti hoon. ❤️
+    </p>
+    <button class="btn" onclick="go(7)">Ek letter bhi hai aapke liye 💌</button>
+  </div>
 </section>
 
+<!-- SCREEN 7: LETTER -->
 <section class="screen" id="s7">
- <div class="scene">
-  <span class="tag">A letter... just for you ♡</span>
-  <p class="script">Dil se...</p>
-  <h2>Aapke liye ek letter 💌</h2>
-  <p>Envelope par tap karo. Aur haan, poora padhna hai. Skip nahi karna. 😤</p>
-  <div class="envelope-wrap">
-   <div class="envelope" id="env" onclick="openLetter()">
-    <div class="paper">For you, with love ❤️</div>
-    <div class="seal">♥</div>
-   </div>
-   <p class="tiny" id="hint">Tap to open your letter</p>
+  <div class="letter">
+    <h3>Dear Abhishek, ❤️</h3>
+
+    <p>
+      Sabse pehle toh Happy Birthday!
+      Pata nahi kaise likhun, kyunki jo feel karti hoon
+      woh words mein poora batana thoda mushkil hai.
+    </p>
+
+    <p>
+      Mujhe aaj bhi yaad hai jab hum pehli baar mile the.
+      Maine toh aapko lekar kuch aur hi soch rakha tha,
+      par dheere-dheere aapne mujhe galat prove kar diya.
+      Shayad Bhagwan ne socha hoga ki humari mulaqat honi hi chahiye.
+    </p>
+
+    <p>
+      Aapki ek baat mujhe bahut achhi lagti hai —
+      aap responsibilities se bhaagte nahi ho.
+      Kitni bhi situations ho, aap give up nahi karte.
+      Aap apno ko samajhte ho aur sabke saath achhe se rehna jaante ho.
+      Kabhi kabhi main bolti hoon thoda selfish bhi ho jao,
+      par aapki patience toh mujhse 2% zyada hi hai. 😂
+    </p>
+
+    <p>
+      Aapne mujhe kabhi kisi situation mein akela feel nahi hone diya.
+      Aapke saath ek protection wali feeling aati hai,
+      jo mere liye bahut special hai.
+      Aapka hona hi kabhi kabhi mere liye enough hota hai.
+    </p>
+
+    <p>
+      Mujhe aapke saath har situation mein rehna hai —
+      achhe din, boring din, random conversations,
+      chhoti trips, bade plans aur woh saare moments
+      jinke baare mein abhi humne socha bhi nahi hai.
+    </p>
+
+    <p>
+      Main har baar perfect nahi hoti, mujhe pata hai.
+      Kabhi zyada bol deti hoon, kabhi chid jaati hoon,
+      par ek baat kabhi change nahi hoti —
+      aap mere liye bahut special ho.
+    </p>
+
+    <p>
+      Aur aapko pata hai? Aap jitne achhe insaan ho na,
+      aapke baare mein likhne ke liye duniya ke words bhi kam pad jaayenge.
+    </p>
+
+    <p>
+      I love youuuuu... bhot bhot bhot jaddaaaa saaara! 😙❤️
+      Puch puch puchhhhh!
+    </p>
+
+    <p style="text-align:right;font-family:'Playfair Display';font-size:19px">
+      Hamesha aapki taraf se ek extra pyaar. ❤️
+    </p>
   </div>
-  <div class="letter" id="letter">
-   <p><b>Happy Birthday, Abhishek! ❤️</b></p>
-   <p>I love youuuuu... bhot bhot bhot jaddaaaa saaara! 😭❤️</p>
-   <p>Pata hai, kabhi kabhi sochti hoon ki hum kaise mile aur kaise dheere dheere itne close ho gaye. Starting mein toh mujhe lagta tha aap bade spoiled aur playboy type ho. 😂 Mujhe khud bhi samajh nahi aata tha ki itna attach hona sahi hoga ya nahi. Lekin shayad Bhagwan ne kuch soch kar hi hum dono ko milaya tha.</p>
-   <p>Teen saal ho gaye hain, aur in teen saalon mein maine aapko bahut kareeb se jaana hai. Aap jis tarah apni responsibilities sambhalte ho, kabhi give up nahi karte, apne logon ko pehchante ho aur phir bhi sabke saath achhe se rehte ho — ye sab mujhe aapki taraf aur zyada attract karta hai.</p>
-   <p>Main aapko bolti rehti hoon thoda selfish raha karo, apne baare mein bhi socha karo. Aur aapka patience toh mujhse shayad 2% zyada hi hai. 😂</p>
-   <p>Aapne mujhe kabhi kisi situation mein akela feel nahi hone diya. Aapke saath ek alag sa protected feel hota hai. Shayad main words mein explain bhi nahi kar sakti ki aap mere liye kya ho.</p>
-   <p>Main ye nahi bolungi ki hum kabhi ladenge nahi, ya sab kuch hamesha perfect rahega. Bas itna pata hai ki chahe kuch bhi ho, main har situation mein aapko apne saath chahti hoon. Aap meri life ka woh person ho jiske saath main har chhoti-badi baat share karna chahti hoon.</p>
-   <p>Aap jitne achhe insaan ho na, mujhe lagta hai duniya mein kuch khaas hi likha hai aapke liye. Bas aap hamesha khush raho, apne dreams achieve karo, life mein bahut aage jao. Main roz Bhagwan se aapke liye yahi pray karti hoon.</p>
-   <p>Aur haan, mujhe aapke saath har second spend karna hai. Bina kisi special plan ke, bas aise hi. Random baatein, random outings, random hasi — sab kuch!</p>
-   <p>Bas aise hi rehna. Apna khayal rakhna. Aur mujhe bhi jhelte rehna. 😂</p>
-   <p>I love youuuuuuuuuuuuu! Bhot bhot bhot jaddaaaa saaara. ❤️</p>
-   <p>Happy Birthday once again, mere favourite insaan! 🥹</p>
-   <p class="sign">Aapki favourite troublemaker 💗</p>
-  </div>
-  <button class="btn" onclick="go('s8')">Abhi khatam nahi hua! →</button>
- </div>
+
+  <button class="btn" onclick="go(8)">Last surprise dekho... 🥹</button>
 </section>
 
+<!-- SCREEN 8: FINAL -->
 <section class="screen" id="s8">
- <div class="scene">
-  <span class="tag">Abhi ek last surprise baaki hai ♡</span>
-  <div class="welcome-art">🎁 ✨ 🎀</div>
-  <p class="script">Abhishek ji...</p>
-  <h2>Ek last surprise! 🥹</h2>
-  <p class="sub">Aapko lag raha hoga sab dekh liya? Nahi ji, abhi toh baaki hai. 😌</p>
-  <button class="btn" onclick="reveal()">Open your surprise ❤️</button>
- </div>
-</section>
-</main>
+  <div class="glass">
+    <div class="eyebrow">One last thing...</div>
+    <div class="final-heart">❤️</div>
+    <h2>Ek baat hamesha yaad rakhna...</h2>
 
-<div id="final">
- <button class="close" onclick="closeFinal()">×</button>
- <div class="heart">❤️</div>
- <p class="script" style="color:#ffd4ee">My favourite person...</p>
- <h1>I LOVE YOU!</h1>
- <h2 style="color:white">Happy Birthday, Abhishek! ❤️</h2>
- <p>Chahe kitni bhi random baatein ho, kitni bhi masti ho, kitni bhi trips plan karni ho — mujhe har baar aap hi chahiye.</p>
- <p style="font-family:'Great Vibes';font-size:32px">Always & Forever ♡</p>
- <button class="btn lightbtn" onclick="closeFinal()">Back to our little world ♡</button>
-</div>
+    <div class="final-message">
+      <p>
+        Aap chahe mujhe kitna bhi irritate karo,
+        hum chahe kitna bhi lad lein,
+        kabhi ek dusre se naraz bhi ho jaayein...
+        lekin meri life mein aapki jagah koi nahi le sakta.
+      </p>
+
+      <p>
+        Main har baar aapko hi choose karna chahti hoon.
+        Aapke saath hasi-mazaak, random baatein,
+        ghoomna, chhoti-chhoti khushiyan aur life ke saare
+        moments share karna chahti hoon.
+      </p>
+
+      <p>
+        Mujhe nahi pata future mein kya-kya hoga,
+        bas itna pata hai ki us future mein aap hone chahiye.
+      </p>
+
+      <p>
+        Aap mere liye bahut special ho, Abhishek.
+        Aur shayad main aapko kabhi utna bata bhi nahi paati
+        jitna feel karti hoon.
+      </p>
+
+      <p class="script highlight" style="font-size:24px">
+        I love youuuuu... bhot bhot bhot jaddaaaa saaara. ❤️
+      </p>
+    </div>
+
+    <div class="signature">Happy Birthday, mere favourite insaan! 🥹</div>
+    <p style="margin-top:12px">Aap hamesha khush rehna. ❤️</p>
+    <button class="btn" onclick="celebrate()">Ek baar aur balloons! 🎈</button>
+    <p class="small-note">Made only for you. With love. 💗</p>
+  </div>
+</section>
 
 <script>
-const photos=[
-"WhatsApp Image 2026-11-22 at 8.14.42 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.44.23 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.44.24 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.44.25 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.49 PM (1).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.49 PM (2).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.49 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.50 PM (1).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.50 PM (2).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.50 PM (3).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.50 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.51 PM (1).jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.51 PM.jpeg",
-"WhatsApp Image 2026-11-22 at 9.55.52 PM.jpeg"
+/* STARS */
+const stars = document.getElementById('stars');
+for(let i=0;i<65;i++){
+  const s=document.createElement('span');
+  s.className='star';
+  s.textContent=['✦','✧','·','⋆'][Math.floor(Math.random()*4)];
+  s.style.left=Math.random()*100+'%';
+  s.style.top=Math.random()*100+'%';
+  s.style.fontSize=(8+Math.random()*14)+'px';
+  s.style.animationDelay=Math.random()*3+'s';
+  stars.appendChild(s);
+}
+
+/* FLOATING HEARTS */
+function floating(){
+  const f=document.createElement('div');
+  f.className='floaty';
+  f.textContent=['♡','✧','💗','✨'][Math.floor(Math.random()*4)];
+  f.style.left=Math.random()*100+'%';
+  f.style.fontSize=(14+Math.random()*19)+'px';
+  f.style.animationDuration=(7+Math.random()*7)+'s';
+  document.getElementById('floaties').appendChild(f);
+  setTimeout(()=>f.remove(),14000);
+}
+setInterval(floating,650);
+
+/* NAVIGATION */
+let current=1;
+function go(n){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('s'+n).classList.add('active');
+  current=n;
+  document.getElementById('progress').style.width=(n/8*100)+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* HEART CATCHING GAME */
+let score=0, timeLeft=10, gameInterval, spawnInterval, gameRunning=false;
+
+function startGame(){
+  if(gameRunning) return;
+  gameRunning=true;
+  score=0;
+  timeLeft=10;
+  document.getElementById('score').textContent=score;
+  document.getElementById('timer').textContent=timeLeft;
+  document.getElementById('gameIntro').style.display='none';
+  document.getElementById('gameResult').style.display='none';
+  document.getElementById('startGame').style.display='none';
+  const area=document.getElementById('gameArea');
+  area.querySelectorAll('.game-heart').forEach(h=>h.remove());
+
+  spawnHeart();
+  spawnInterval=setInterval(spawnHeart,650);
+  gameInterval=setInterval(()=>{
+    timeLeft--;
+    document.getElementById('timer').textContent=timeLeft;
+    if(timeLeft<=0 || score>=5) endGame();
+  },1000);
+}
+
+function spawnHeart(){
+  if(!gameRunning) return;
+  const area=document.getElementById('gameArea');
+  const heart=document.createElement('div');
+  heart.className='game-heart';
+  heart.textContent=['💗','❤️','💕','💖'][Math.floor(Math.random()*4)];
+  heart.style.left=(Math.random()*82+3)+'%';
+  heart.style.top=(Math.random()*72+8)+'%';
+  heart.onclick=()=>{
+    if(!gameRunning) return;
+    score++;
+    document.getElementById('score').textContent=score;
+    heart.remove();
+    if(score>=5) endGame();
+  };
+  area.appendChild(heart);
+  setTimeout(()=>heart.remove(),1500);
+}
+
+function endGame(){
+  if(!gameRunning) return;
+  gameRunning=false;
+  clearInterval(gameInterval);
+  clearInterval(spawnInterval);
+  document.getElementById('gameArea').querySelectorAll('.game-heart').forEach(h=>h.remove());
+
+  document.getElementById('gameResult').style.display='block';
+  document.getElementById('startGame').style.display='inline-block';
+  document.getElementById('startGame').textContent='Phir se khelna hai?';
+
+  if(score>=5){
+    document.getElementById('resultTitle').textContent='Wahhhhh! 🥳';
+    document.getElementById('resultText').textContent='5 hearts pakad liye! Aap toh fast nikle. 😂';
+    document.getElementById('gameNext').style.display='inline-block';
+    document.getElementById('startGame').style.display='none';
+  } else {
+    document.getElementById('resultTitle').textContent='Areyyy! 😂';
+    document.getElementById('resultText').textContent='Bas '+score+' hearts? Ek aur chance le lo!';
+  }
+}
+
+/* BIRTHDAY CANDLES */
+function blowCandles(){
+  document.getElementById('cake').textContent='🎂✨';
+  document.getElementById('blowBtn').style.display='none';
+  document.getElementById('cakeNext').style.display='inline-block';
+  burst();
+}
+
+/* PHOTOS */
+const photos = [
+  "WhatsApp Image 2026-11-22 at 8.14.42 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.44.23 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.44.24 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.44.25 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.49 PM (1).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.49 PM (2).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.49 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.50 PM (1).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.50 PM (2).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.50 PM (3).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.50 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.51 PM (1).jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.51 PM.jpeg",
+  "WhatsApp Image 2026-11-22 at 9.55.52 PM.jpeg"
 ];
-const captions=["My favourite 💗","This one! 🥹","Our moment ✨","Hehe us 🤭","Cuties 💕","A little memory","Just us ❤️","Good times 🌷","Favourite people","That smile!","Together 🫶","One for keeps","Always special","My person 💌"];
-const gallery=document.getElementById("gallery");
-photos.forEach((name,i)=>{
- const frame=document.createElement("div");
- frame.className="polaroid";
- frame.style.setProperty("--r",i%2===0?"-2deg":"2deg");
- const img=document.createElement("img");
- img.src=name;img.alt="Memory "+(i+1);img.loading="lazy";
- img.onerror=()=>{img.style.visibility="hidden";img.style.height="130px";};
- const cap=document.createElement("span");cap.textContent=captions[i];
- frame.append(img,cap);gallery.append(frame);
+
+const captions = [
+  "A favourite moment ❤️",
+  "Bas aise hi... 🥹",
+  "One for the memories",
+  "Hum aur humari baatein",
+  "This one is special 💗",
+  "A little happiness",
+  "My favourite person",
+  "Just us ✨",
+  "A good day indeed",
+  "Another little memory",
+  "Aap aur main ❤️",
+  "More moments to come",
+  "Always a favourite",
+  "One more for us"
+];
+
+const gallery=document.getElementById('gallery');
+photos.forEach((photo,i)=>{
+  const card=document.createElement('div');
+  card.className='photo';
+  card.style.setProperty('--tilt',((i%2===0)?-1.5:1.5)+'deg');
+
+  const img=document.createElement('img');
+  img.src=photo;
+  img.alt='Our memory '+(i+1);
+  img.loading='lazy';
+  img.onerror=()=>{card.style.display='none';};
+
+  const caption=document.createElement('div');
+  caption.className='photo-caption';
+  caption.textContent=captions[i];
+
+  card.appendChild(img);
+  card.appendChild(caption);
+  gallery.appendChild(card);
 });
-const decor=document.getElementById("decor");
-["♡","♥","✦","✨","💕","⋆"].forEach((sym,j)=>{
- for(let i=0;i<5;i++){
-  const el=document.createElement("span");
-  el.className="float";el.textContent=sym;
-  el.style.left=Math.random()*100+"%";
-  el.style.fontSize=(15+Math.random()*25)+"px";
-  el.style.animationDuration=(13+Math.random()*17)+"s";
-  el.style.animationDelay=(-Math.random()*25)+"s";
-  decor.append(el);
- }
-});
-const screens=["s1","s2","s3","s4","s5","s6","s7","s8"];
-function go(id){
- document.querySelectorAll(".screen").forEach(x=>x.classList.remove("active"));
- document.getElementById(id).classList.add("active");
- document.getElementById("progress").style.width=((screens.indexOf(id)+1)/8*100)+"%";
- window.scrollTo({top:0,behavior:"smooth"});
- if(id==="s4")confetti(15);
+
+/* CONFETTI */
+function burst(){
+  for(let i=0;i<35;i++){
+    const e=document.createElement('div');
+    e.textContent=['💗','✨','🎉','💕','⭐'][Math.floor(Math.random()*5)];
+    e.style.position='fixed';
+    e.style.left=Math.random()*100+'vw';
+    e.style.top='-30px';
+    e.style.fontSize=(15+Math.random()*18)+'px';
+    e.style.zIndex='20';
+    e.style.pointerEvents='none';
+    e.style.transition='transform 3s linear, opacity 3s';
+    document.body.appendChild(e);
+    setTimeout(()=>{
+      e.style.transform=`translate(${(Math.random()-.5)*200}px, 110vh) rotate(500deg)`;
+      e.style.opacity='0';
+    },50);
+    setTimeout(()=>e.remove(),3200);
+  }
 }
-function wish(){
- document.getElementById("wishText").textContent="Wish maang li? Ab poori bhi honi chahiye! 🎉❤️";
- confetti(70);
-}
-function openLetter(){
- document.getElementById("env").classList.add("open");
- document.getElementById("letter").classList.add("show");
- document.getElementById("hint").textContent="Aapke liye, dil se ❤️";
- setTimeout(()=>document.getElementById("letter").scrollIntoView({behavior:"smooth",block:"center"}),600);
-}
-function reveal(){document.getElementById("final").classList.add("show");confetti(110)}
-function closeFinal(){document.getElementById("final").classList.remove("show")}
-function confetti(n){
- const colors=["#ff91bd","#c9a3ff","#ffe5a9","#fff","#f6b3d5"];
- for(let i=0;i<n;i++){
-  const c=document.createElement("i");c.className="confetti";
-  c.style.left=Math.random()*100+"%";
-  c.style.background=colors[Math.floor(Math.random()*colors.length)];
-  c.style.animationDelay=Math.random()+"s";
-  document.body.append(c);setTimeout(()=>c.remove(),4000);
- }
+
+function celebrate(){
+  burst();
+  for(let i=0;i<25;i++) setTimeout(floating,i*80);
 }
 </script>
+
 </body>
 </html>
