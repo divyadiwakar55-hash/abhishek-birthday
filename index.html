@@ -4,22 +4,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OUR LITTLE CRAZY WORLD ❤️</title>
+<title>Abhishek's Birthday ❤️</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap');
 
 :root{
  --pink:#ff719e;--yellow:#ffda70;--blue:#8bd9f5;
  --purple:#b9a0ff;--green:#b5e6bd;--ink:#302747;
- --paper:#fffaf0;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
  margin:0;color:var(--ink);
  font-family:'DM Sans',sans-serif;
- background:#fff5e9;
- overflow-x:hidden;
+ background:#fff5e9;overflow-x:hidden;
 }
 button{font:inherit;cursor:pointer}
 #confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
@@ -29,7 +27,7 @@ button{font:inherit;cursor:pointer}
 .blob.one{background:#ff9fbd;top:5%;left:-100px}
 .blob.two{background:#9cddff;bottom:5%;right:-100px}
 .wrap{width:min(1050px,92%);margin:auto}
-.screen{display:none;min-height:100vh;padding:55px 0 75px;animation:appear .65s ease}
+.screen{display:none;min-height:100vh;padding:45px 0 70px;animation:appear .65s ease}
 .screen.active{display:block}
 @keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
 .paper{
@@ -50,7 +48,7 @@ h1 em{color:var(--pink);font-style:normal}
 h2{font-size:clamp(34px,6vw,57px);line-height:1.05;margin:15px 0}
 h3{font-size:23px;margin:5px 0}
 p{line-height:1.75}
-.lead{max-width:640px;margin:15px auto 28px;font-size:17px;color:#655a72}
+.lead{max-width:660px;margin:15px auto 28px;font-size:17px;color:#655a72}
 .big-emoji{font-size:65px;display:block;animation:bob 2s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(-10px) rotate(5deg)}}
 .btn{
@@ -64,9 +62,6 @@ p{line-height:1.75}
 .btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:0 6px 0 #d3ad43}
 .btn.blue{background:#69c7e8;box-shadow:0 6px 0 #3c9bbd}
 .doodle{font-size:27px;margin:12px}
-.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:25px auto}
-.nav button{background:white;border:2px dashed #ffc0d5;border-radius:30px;padding:10px 15px;color:var(--ink);font-weight:800}
-.nav button:hover{background:#ffe5ee}
 .section-head{text-align:center;margin:15px 0 35px}
 .section-head p{color:#766b80}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:28px 0}
@@ -74,39 +69,51 @@ p{line-height:1.75}
 .tile:nth-child(1){background:#ffe3eb;transform:rotate(-1deg)}
 .tile:nth-child(2){background:#fff0bc;transform:rotate(1deg)}
 .tile:nth-child(3){background:#dff5ff;transform:rotate(-1deg)}
+.tile:nth-child(4){background:#eee5ff;transform:rotate(1deg)}
 .tile b{display:block;font-size:38px;margin-bottom:7px}
 .tile p{font-size:14px;margin:8px 0 0}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
 .polaroid{
  background:white;padding:10px 10px 16px;
  border-radius:4px;box-shadow:0 8px 20px #40314b20;
- transform:rotate(var(--rotation));
- transition:.3s;position:relative;
+ transform:rotate(var(--rotation));transition:.3s;position:relative;
 }
 .polaroid:hover{transform:rotate(0deg) scale(1.045);z-index:2}
 .polaroid img{width:100%;aspect-ratio:1/1.13;object-fit:cover;display:block;background:#f5e8ed}
 .polaroid p{text-align:center;font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800;margin:10px 0 0;line-height:1.2}
 .tape{position:absolute;width:65px;height:18px;background:#ffe38a99;top:-8px;left:35%;transform:rotate(-7deg)}
 .photo-error{font-size:12px;color:#d44;text-align:center}
-.timeline{max-width:680px;margin:25px auto}
-.memory{display:flex;gap:17px;align-items:flex-start;margin:18px 0;padding:20px;background:white;border-radius:20px;border-left:7px solid var(--pink);box-shadow:0 5px 18px #00000009}
+.memory{
+ display:flex;gap:17px;align-items:flex-start;margin:18px 0;
+ padding:20px;background:white;border-radius:20px;
+ border-left:7px solid var(--pink);box-shadow:0 5px 18px #00000009;
+}
 .memory:nth-child(even){border-color:#86d3f1}
 .memory span{font-size:30px}
 .memory p{margin:4px 0;color:#756b7e}
 .note{
- max-width:720px;margin:25px auto;background:#fff9e9;
- border:2px dashed #edc978;padding:30px;
+ max-width:760px;margin:25px auto;background:#fff9e9;
+ border:2px dashed #edc978;padding:clamp(20px,5vw,38px);
  border-radius:12px;text-align:left;line-height:2;
- transform:rotate(-.4deg);white-space:pre-line;
+ transform:rotate(-.2deg);white-space:pre-line;
+ font-size:15px;
 }
 .cake{font-size:105px;display:block;line-height:1.4}
 .candles{font-size:28px;letter-spacing:8px}
 .secret{
- display:none;background:#fff0f5;border:2px dashed var(--pink);
- border-radius:24px;padding:25px;margin:22px auto;max-width:550px;
- animation:appear .6s ease;
+ display:none;position:fixed;inset:0;z-index:30;
+ background:#fff0f5;padding:22px;
+ align-items:center;justify-content:center;
+ overflow-y:auto;animation:appear .6s ease;
 }
-.secret.show{display:block}
+.secret.show{display:flex}
+.secret-inner{
+ width:min(700px,100%);background:#fffdf7;
+ border:3px solid white;border-radius:30px;
+ padding:clamp(25px,6vw,55px);
+ box-shadow:0 15px 60px #40314b30;text-align:center;
+}
+.secret-inner p{color:#655a72}
 .footer{text-align:center;margin:35px 0 0;color:#8c8194;font-size:13px}
 @media(max-width:650px){
  .gallery{grid-template-columns:repeat(2,1fr);gap:12px}
@@ -120,20 +127,35 @@ p{line-height:1.75}
 </style>
 </head>
 <body>
+
 <div id="confetti"></div>
-<div class="blob one"></div><div class="blob two"></div>
+<div class="blob one"></div>
+<div class="blob two"></div>
 
 <!-- WELCOME -->
 <section class="screen active" id="welcome">
 <div class="wrap">
 <div class="paper center">
-<span class="big-emoji">🎈🤪🎀</span>
-<span class="sticker">PRIVATE INVITATION • NO BORING PEOPLE</span>
-<h1>OUR LITTLE<br><em>CRAZY WORLD</em> ❤️</h1>
-<p class="lead">Hey Abhishek! Someone has prepared something for you. Warning: contains embarrassing memories, unlimited masti and a suspicious amount of pyaar. 😂</p>
+<span class="big-emoji">🤨🎈🎀</span>
+<span class="sticker">ABHISHEK JI, ZARA IDHAR DEKHIYE</span>
+
+<h1>OYE <em>AAP!</em></h1>
+
+<p class="lead">
+Haan ji, aapse hi baat ho rahi hai. 😂
+Aaj aapka birthday hai aur mere paas aapke liye kuch hai.
+Zyada excited mat hona, pehle poora dekhna padega.
+</p>
+
 <div class="doodle">🍒 🧸 💌 🦋 🍭</div>
-<button class="btn pink" onclick="go('entry');burst()">OPEN YOUR SURPRISE 🎁</button>
-<p style="font-size:12px;color:#968a9b">P.S. Only the birthday boy is allowed inside.</p>
+
+<button class="btn pink" onclick="go('entry');burst()">
+ACHA CHALO, KHOLIYE 🎁
+</button>
+
+<p style="font-size:12px;color:#968a9b">
+Aur haan, beech mein bhaagna allowed nahi hai. 😌
+</p>
 </div>
 </div>
 </section>
@@ -143,16 +165,27 @@ p{line-height:1.75}
 <div class="wrap">
 <div class="paper center">
 <span class="big-emoji">🚨🥳🚨</span>
-<span class="sticker">IMPORTANT PUBLIC ANNOUNCEMENT</span>
-<h1>OYE <em>ABHISHEK!</em></h1>
-<p class="lead">Aaj duniya ke sabse special (aur thode irritating) insaan ka birthday hai! 😂</p>
+<span class="sticker">EK ZAROORI SUCHNA</span>
+
+<h1>HAPPY BIRTHDAY<br><em>ABHISHEK!</em></h1>
+
+<p class="lead">
+Aaj aapka din hai. Toh aaj aapki saari harkatein maaf...
+Kal se phir dekh lenge. 😂
+</p>
+
 <div class="cards">
-<div class="tile"><b>🤣</b>Drama quota: Unlimited</div>
-<div class="tile"><b>🎂</b>Birthday boy: YOU</div>
-<div class="tile"><b>❤️</b>My favourite headache</div>
+<div class="tile"><b>🧸</b>Cute sweet kuchhu bachha</div>
+<div class="tile"><b>🗺️</b>Ghoomne ka plan? YES!</div>
+<div class="tile"><b>💬</b>Random baatein specialist</div>
+<div class="tile"><b>❤️</b>Mere favourite insaan</div>
 </div>
-<h3>Ready for your birthday madness?</h3>
-<button class="btn" onclick="go('party');burst()">LET THE MADNESS BEGIN! 🎉</button>
+
+<h3>Waise aaj thoda special feel karna banta hai.</h3>
+
+<button class="btn" onclick="go('party');burst()">
+CHALIYE SHURU KARTE HAIN! 🎉
+</button>
 </div>
 </div>
 </section>
@@ -161,17 +194,32 @@ p{line-height:1.75}
 <section class="screen" id="party">
 <div class="wrap">
 <div class="paper center">
-<span class="sticker">TODAY'S MAIN CHARACTER</span>
+<span class="sticker">TODAY IS YOUR DAY</span>
 <span class="big-emoji">🎂🥳🕺</span>
+
 <h1>HAPPY<br><em>BIRTHDAY!</em></h1>
 <h2 style="color:#7b66b4">ABHISHEK ❤️</h2>
-<p class="lead">Aaj tumhara day hai! Toh extra nakhre allowed hain. Bas kal se wapas normal insaan ban jaana. 😂</p>
+
+<p class="lead">
+23 November 2026.
+Aapka ek aur birthday, aur meri taraf se aapke liye dher saara pyaar.
+Bhagwan kare aapki saari achhi wishes poori hon.
+</p>
+
 <div class="cake">🎂</div>
 <div class="candles" id="candles">🕯️ 🕯️ 🕯️</div>
-<p><b>Make a wish and tap the cake to blow the candles!</b></p>
-<button class="btn yellow" onclick="blow()">BLOW THE CANDLES! 💨</button>
+
+<p><b>Chaliye, wish maangiye aur candles bujhaiye!</b></p>
+
+<button class="btn yellow" onclick="blow()">
+BLOW THE CANDLES! 💨
+</button>
+
 <p id="wishMsg" style="font-weight:800;color:#e65b91"></p>
-<button class="btn pink" onclick="go('gallery')">SHOW ME OUR PHOTOS 📸</button>
+
+<button class="btn pink" onclick="go('gallery')">
+AB HAMARI PHOTOS DEKHIYE 📸
+</button>
 </div>
 </div>
 </section>
@@ -181,37 +229,104 @@ p{line-height:1.75}
 <div class="wrap">
 <div class="paper">
 <div class="section-head">
-<span class="sticker">CAMERA ROLL OF CHAOS</span>
-<h2>US BEING <em style="color:#ff719e">US</em> 🤪</h2>
-<p>14 pictures. A million memories. And two people who clearly need supervision. 😂</p>
+<span class="sticker">CAMERA ROLL KI GAWAHI</span>
+<h2>YE HUM HAIN 🤪</h2>
+<p>
+Koi perfect poses nahi, koi perfect planning nahi.
+Bas hum, hamari photos aur hamari apni si duniya. ❤️
+</p>
 </div>
+
 <div class="gallery" id="galleryGrid"></div>
+
 <div class="center">
-<p>Every picture has a story. Every story has a little bit of madness. ❤️</p>
-<button class="btn pink" onclick="go('memories')">NEXT: OUR LITTLE ADVENTURES ➜</button>
+<p>Waise photos dekhkar smile toh aa hi gayi hogi. 😌</p>
+<button class="btn pink" onclick="go('memories')">
+AB THODI MERI BAAT SUNIYE ➜
+</button>
 </div>
 </div>
 </div>
 </section>
 
-<!-- MEMORIES -->
+<!-- PERSONAL MOMENTS -->
 <section class="screen" id="memories">
 <div class="wrap">
 <div class="paper">
+
 <div class="section-head">
-<span class="sticker">THE US COLLECTION</span>
-<h2>3 YEARS OF <em style="color:#ff719e">US BEING US</em> 💗</h2>
-<p>Not an anniversary. Just a little collection of our favourite kind of chaos.</p>
+<span class="sticker">MERI KUCH OBSERVATIONS</span>
+<h2>AAPKE BAARE MEIN 💗</h2>
+<p>Ye sab shayad main aapko itna openly nahi bolti.</p>
 </div>
+
 <div class="timeline">
-<div class="memory"><span>🌧️</span><div><h3>That beginning...</h3><p>Who knew that one little beginning would give us so many stories to laugh about?</p></div></div>
-<div class="memory"><span>🏍️</span><div><h3>Our random adventures</h3><p>Every little outing becomes a memory when it's with you.</p></div></div>
-<div class="memory"><span>😂</span><div><h3>Our pagalpan</h3><p>Random teasing, silly fights, endless laughter and absolutely no shortage of drama.</p></div></div>
-<div class="memory"><span>🫶</span><div><h3>Our little moments</h3><p>The ordinary moments that somehow become my favourite ones.</p></div></div>
+
+<div class="memory">
+<span>🥹</span>
+<div>
+<h3>Aapki presence</h3>
+<p>
+Kabhi-kabhi kuch karne ki zarurat nahi hoti.
+Bas aapka saath hona hi mere liye enough hai.
+</p>
 </div>
+</div>
+
+<div class="memory">
+<span>💬</span>
+<div>
+<h3>Hamari random baatein</h3>
+<p>
+Na koi topic, na koi agenda.
+Bas baatein chalti rehti hain aur pata hi nahi chalta.
+</p>
+</div>
+</div>
+
+<div class="memory">
+<span>🧳</span>
+<div>
+<h3>Ghoomne ka plan</h3>
+<p>
+Aapko kahin ghoomne jaana kitna excite karta hai,
+ye toh mujhe pata hi hai. Ek plan banne ki der hai! 😂
+</p>
+</div>
+</div>
+
+<div class="memory">
+<span>🧸</span>
+<div>
+<h3>Kabhi-kabhi cute sweet kuchhu bachha</h3>
+<p>
+Aur kabhi aapko dekhkar bas yehi lagta hai.
+Haan ji, aapki baat kar rahi hoon. 😂❤️
+</p>
+</div>
+</div>
+
+<div class="memory">
+<span>❤️</span>
+<div>
+<h3>Aapki ek baat jo mujhe proud feel karwati hai</h3>
+<p>
+Aap responsibilities ko saath lekar chalte hain.
+Mushkil ho tab bhi haar nahi maante.
+Aapke andar ka patience aur sabke liye achha karne ki aadat
+mujhe sach mein bahut achhi lagti hai.
+</p>
+</div>
+</div>
+
+</div>
+
 <div class="center">
-<button class="btn pink" onclick="go('teasing')">NEXT: A FEW COMPLAINTS 😂</button>
+<button class="btn pink" onclick="go('teasing')">
+AB THODI KHINCHAI HO JAAYE 😂
+</button>
 </div>
+
 </div>
 </div>
 </section>
@@ -220,17 +335,47 @@ p{line-height:1.75}
 <section class="screen" id="teasing">
 <div class="wrap">
 <div class="paper center">
-<span class="sticker">OFFICIAL COMPLAINT DEPARTMENT</span>
-<h2>THINGS I <em style="color:#ff719e">TOLERATE</em> ABOUT YOU 🤣</h2>
+
+<span class="sticker">EK CHHOTI SI REPORT</span>
+<h2>AAPKI KUCH <em style="color:#ff719e">HARKATEIN</em> 😂</h2>
+
 <div class="cards">
-<div class="tile"><b>🙄</b>Your unlimited nakhre<p>Seriously, who gave you this much confidence?</p></div>
-<div class="tile"><b>😏</b>Your irritating smile<p>Annoyingly difficult to stay angry at.</p></div>
-<div class="tile"><b>🤡</b>Your pagalpan<p>And somehow I am also part of the problem.</p></div>
-<div class="tile"><b>🫣</b>Your teasing skills<p>One day I will get my revenge. Just wait.</p></div>
+<div class="tile">
+<b>🗺️</b>
+Ghoomne ka plan
+<p>Bas kahin chalne ka plan ban jaaye, phir dekhiye excitement. 😂</p>
 </div>
-<h3>But jokes apart...</h3>
-<p class="lead">You are my favourite person to laugh with, annoy, tease and make memories with. ❤️</p>
-<button class="btn pink" onclick="go('letter')">OKAY, NOW THE SOFT PART 💌</button>
+
+<div class="tile">
+<b>💬</b>
+Random baatein
+<p>Topic ho ya na ho, baat toh honi hi chahiye.</p>
+</div>
+
+<div class="tile">
+<b>🧸</b>
+Kuchhu bachha mode
+<p>Kabhi-kabhi itne cute lagte hain ki kya hi bolun.</p>
+</div>
+
+<div class="tile">
+<b>😌</b>
+Aap aur aapki responsibilities
+<p>Sab kuch sambhalne ki koshish. Kabhi apna bhi dhyaan rakh liya kijiye!</p>
+</div>
+</div>
+
+<h3>Achha ab serious baat...</h3>
+
+<p class="lead">
+Aap mere liye bahut special hain.
+Aur aaj aapko ye yaad dilana tha.
+</p>
+
+<button class="btn pink" onclick="go('letter')">
+AB EK LETTER HAI AAPKE LIYE 💌
+</button>
+
 </div>
 </div>
 </section>
@@ -239,51 +384,154 @@ p{line-height:1.75}
 <section class="screen" id="letter">
 <div class="wrap">
 <div class="paper center">
+
 <span class="big-emoji">💌🧸</span>
-<span class="sticker">SOME WORDS FROM MY HEART</span>
-<h2>Jokes apart,<br><em style="color:#ff719e">you matter.</em></h2>
-<div class="note">Happy Birthday, Abhishek! ❤️
+<span class="sticker">SIRF AAPKE LIYE</span>
 
-You annoy me, irritate me, tease me and sometimes test my patience like it's your full-time job. 😂
+<h2>Ek baat hai...<br><em style="color:#ff719e">dil se suniyega.</em></h2>
 
-But you also make me laugh, make ordinary days special and give me so many memories that I will always keep close to my heart.
+<div class="note">Sabse pehle to...
 
-I hope this new year of your life brings you happiness, success, peace and everything you secretly wish for.
+I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU!
 
-Keep smiling, keep growing, keep chasing your dreams and please never stop being your crazy self.
+Luvuuuuuuuuuuu, luvuuuu, luv uuuu... bhot bhot bhot bhot bhot bhot bhottt hi jaddaaaa saaaraaaaaaaaa! ❤️
 
-Thank you for being you. Here's to more adventures, more silly fights, more random laughs and countless beautiful memories together.
+Abhishek, aapko shayad pata bhi nahi hai ki aap mere liye kitne important hain.
 
-I love you, birthday wale pagal! ❤️
+Abhi kuch hi dino mein humari bahut gandi ladai hui. Jo nahi honi chahiye thi, ya phir uske hone ka bhi koi reason hoga. Lekin ladai ho, pyaar ho, tension ho ya kuch bhi... mujhe toh aap hi chahiye ho, har situation mein.
 
-— Your favourite troublemaker 💗</div>
-<button class="btn pink" onclick="go('surprise')">WAIT... ONE LAST SURPRISE 🎁</button>
+Hum ladkar bol toh dete hain ki ab nahi rehna saath, ab ho gaya mera. Lekin deep down toh humein pata hi hai ki hum kitne paani mein hain. 😂
+
+Aur ek baat jo shayad maine kabhi aapko nahi boli...
+
+Abhishek, aap ek real man hain jo responsibilities ko saath lekar chalte hain. Unse haar nahi maante, chahe kuch bhi ho.
+
+Aapko pata hai aapke apne kaun hain aur jo apne nahi hain, aap unke bhi apne hain. Aap sabke saath achha karte hain, phir chahe woh kaise bhi hon.
+
+Main aapko samjhati hoon ki selfish bano, selfish bano, lekin sabka kiya sabke aage aata hai, shayad.
+
+Aapke andar mujhse zyada hi patience hai. Chahe 2% zyada hi ho, but hai. 😂
+
+Humein 3 saal ho gaye ek saath.
+
+Jab hum shuru-shuru mein ek doosre se baat karte the, toh mujhe lagta tha ki aap bigde hue ladke honge, jo ladkiyon ke baare mein gandi baatein karte honge. Playboy type lagte the.
+
+2-3 hafte aapse mili toh mujhe lagta tha ki agar maine aapse attachment badhai aur kuch relationship jaisa ban gaya toh mujhse kuch galti ho jaayegi aur main buri ladki ban jaungi. Aapke saath kuch bura ho jaayega, anjaane mein mujhse. Aisa sochkar maine aapse doori banayi.
+
+Lekin Bhagwan ne hi chaha tha ki hum mile. Itni ladai ke baad bhi hum ek saath hue aur aaj tak saath hain.
+
+Aapne kabhi mujhe kisi situation mein akela nahi chhoda.
+
+Life mein pehle insaan hain aap jiske hone se mujhe protective feel hota hai.
+
+Parents toh sabke hote hi hain, mere bhi hain, lekin mujhe aisa lagta hai aap mummy-papa se bhi zyada hain mere liye. Yahan main compare nahi kar rahi, bas jo feel karti hoon woh bol rahi hoon.
+
+Shayad main aapke liye itni nahi hoon kisi cheez mein badhkar, lekin aap mere liye enough se bhi badhkar hain.
+
+Aap jitne achhe insaan hain, mere liye toh is poore world mein kuch khaas nahi likha.
+
+Maine kya likha, kya nahi... aapko pata hi hai sab. Aur bolne ko baaki bas ek hi baat hai...
+
+I LOVE YOU!
+
+Itna zyada ki sabse zyada mujhe 1-1 sec aapke saath rehna hai.
+
+PUCH PUCH PUCHHHHHH 😙😙
+
+Happy Birthday, Abhishek!
+
+Bhagwan aapko hamesha khush rakhein, aapko har woh cheez mile jo aap deserve karte hain. Aap apne saare dreams poore karein aur hamesha aise hi aage badhte rahein.
+
+Aur haan, apna dhyaan bhi rakha kijiye.
+
+Aapko bahut bahut bahut saara pyaar. ❤️
+
+— Aapki ❤️</div>
+
+<button class="btn pink" onclick="go('surprise')">
+RUKIYE... ABHI EK AUR CHEEZ HAI 👀
+</button>
+
 </div>
 </div>
 </section>
 
-<!-- FINAL SURPRISE -->
+<!-- SECRET SURPRISE -->
 <section class="screen" id="surprise">
 <div class="wrap">
 <div class="paper center">
-<span class="big-emoji">🎁🤫💗</span>
-<span class="sticker">TOP SECRET • FOR ABHISHEK ONLY</span>
-<h2>THINK YOU'VE<br>SEEN <em style="color:#ff719e">EVERYTHING?</em></h2>
-<p class="lead">Nope. One last little surprise is waiting. Tap below. 👀</p>
-<button class="btn yellow" onclick="reveal()">UNLOCK MY SECRET ❤️</button>
-<div class="secret" id="secret">
-<span style="font-size:55px">🫶🥹</span>
-<h2 style="color:#ed6493">YOU ARE MY FAVOURITE!</h2>
-<p>Out of all the people in this world, I am so glad I get to make memories with you.</p>
-<p>One more thing...</p>
-<h3>YOU'RE STUCK WITH ME! 😂❤️</h3>
-<p>Happy Birthday, Abhishek! Here's to our little crazy world, forever full of laughter. 💗</p>
-</div>
-<button class="btn pink" onclick="burst()">MORE CONFETTI PLEASE! 🎉</button>
-<p class="footer">Made with love, laughter & a little bit of nautanki. ❤️<br>OUR LITTLE CRAZY WORLD</p>
+
+<span class="big-emoji">🤫🎁💗</span>
+<span class="sticker">ABHI KHATAM NAHI HUA</span>
+
+<h2>ABHISHEK JI,<br><em style="color:#ff719e">EK LAST CHEEZ!</em></h2>
+
+<p class="lead">
+Aapko lag raha hoga sab dekh liya?
+Nahi ji. Ek chhoti si cheez aur chhupayi hui hai.
+</p>
+
+<button class="btn yellow" onclick="reveal()">
+IS BUTTON KO DABAIYE ❤️
+</button>
+
+<p style="font-size:13px;color:#968a9b">
+Warning: Iske baad smile aa sakti hai. 😂
+</p>
+
 </div>
 </div>
 </section>
+
+<!-- FULL SCREEN SECRET -->
+<div class="secret" id="secret">
+<div class="secret-inner">
+
+<span class="big-emoji">🥹🫶❤️</span>
+
+<span class="sticker">SIRF AAP AUR MAIN</span>
+
+<h1 style="font-size:clamp(42px,8vw,75px)">
+EK BAAT <em>YAAD RAKHIYE</em>
+</h1>
+
+<p style="font-size:18px">
+Mujhe aapse koi perfect version nahi chahiye.
+Mujhe aap chahiye. Aap jaise hain, waise hi.
+</p>
+
+<h2 style="color:#ed6493">
+HAR SITUATION MEIN. ❤️
+</h2>
+
+<p>
+Aur haan, jitna ho sake mujhe apne saath ghumate rahiye,
+random baatein karte rahiye aur kabhi-kabhi
+apna cute sweet kuchhu bachha mode bhi dikhate rahiye. 😂
+</p>
+
+<h1 style="color:#ff719e">
+I LOVE YOUUUUU!
+</h1>
+
+<p style="font-size:21px;font-weight:800">
+Puch puch puchhhhh 😙😙
+</p>
+
+<p>
+Happy Birthday once again, Abhishek! ❤️
+</p>
+
+<button class="btn pink" onclick="closeSecret()">
+AB WAPAS CHALIYE 😂
+</button>
+
+<p class="footer">
+Made with lots and lots of love. ❤️
+</p>
+
+</div>
+</div>
 
 <script>
 const photos = [
@@ -304,36 +552,66 @@ const photos = [
 ];
 
 const captions = [
-"Our kind of crazy ❤️","Partners in crime 🤪","Favourite humans",
-"Too much drama 😂","Little happy moments","My favourite headache",
-"Just us being us","Adventure buddies","Forever teasing",
-"Cutest chaos","Random memories","The silly smiles",
-"One more memory","My happy place 💗"
+"Our kind of crazy ❤️",
+"Just us 🤪",
+"Favourite moments",
+"Too much drama 😂",
+"Little happy moments",
+"My favourite person",
+"Just being us",
+"Adventure buddies",
+"Random memories",
+"Cutest chaos",
+"Random memories",
+"Those smiles",
+"One more memory",
+"My happy place 💗"
 ];
 
 const grid=document.getElementById('galleryGrid');
+
 photos.forEach((photo,i)=>{
  const frame=document.createElement('div');
  frame.className='polaroid';
- frame.style.setProperty('--rotation',`${[-3,2,-1,3,-2,1][i%6]}deg`);
- const tape=document.createElement('div');tape.className='tape';
+ frame.style.setProperty(
+  '--rotation',`${[-3,2,-1,3,-2,1][i%6]}deg`
+ );
+
+ const tape=document.createElement('div');
+ tape.className='tape';
+
  const img=document.createElement('img');
- img.src=encodeURIComponent(photo);
+ img.src=photo;
  img.alt='Our memory '+(i+1);
  img.loading='lazy';
- img.onerror=()=>{img.style.display='none';const msg=document.createElement('p');msg.className='photo-error';msg.textContent='Photo not loading — check filename';frame.appendChild(msg)};
- const caption=document.createElement('p');caption.textContent=captions[i];
- frame.append(tape,img,caption);grid.appendChild(frame);
+
+ img.onerror=()=>{
+  img.style.display='none';
+  const msg=document.createElement('p');
+  msg.className='photo-error';
+  msg.textContent='Photo not loading — check filename';
+  frame.appendChild(msg);
+ };
+
+ const caption=document.createElement('p');
+ caption.textContent=captions[i];
+
+ frame.append(tape,img,caption);
+ grid.appendChild(frame);
 });
 
 function go(id){
- document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+ document.querySelectorAll('.screen').forEach(s=>{
+  s.classList.remove('active');
+ });
  document.getElementById(id).classList.add('active');
  window.scrollTo({top:0,behavior:'smooth'});
 }
+
 function burst(){
  const area=document.getElementById('confetti');
  const colors=['#ff719e','#ffda70','#8bd9f5','#b9a0ff','#b5e6bd'];
+
  for(let i=0;i<95;i++){
   const piece=document.createElement('div');
   piece.className='confetti-piece';
@@ -347,15 +625,24 @@ function burst(){
   setTimeout(()=>piece.remove(),4500);
  }
 }
+
 function blow(){
  document.getElementById('candles').textContent='💨 ✨ 💨';
- document.getElementById('wishMsg').textContent='WISH SENT TO THE UNIVERSE! 💗';
+ document.getElementById('wishMsg').textContent=
+ 'Aapki wish universe tak pahunch gayi! ❤️';
  burst();
 }
+
 function reveal(){
  document.getElementById('secret').classList.add('show');
  burst();
 }
+
+function closeSecret(){
+ document.getElementById('secret').classList.remove('show');
+ burst();
+}
 </script>
+
 </body>
 </html>
